@@ -28,9 +28,8 @@ Through comprehensive exploratory data analysis and machine learning implementat
 **Geographic and Economic Drivers**: The analysis confirmed that median income is the strongest predictor of house values (R² = 0.6 correlation), followed by ocean proximity. Properties near the ocean command significantly higher prices compared to inland locations, with the distinction being more binary (coastal vs. inland) rather than granular proximity levels.
 
 **Model Performance**: The Random Forest Regressor emerged as the optimal model, achieving:
-- **R² Score**: 0.754 (75.4% variance explained)
-- **Mean Absolute Error**: 17.1% of average house value
-- **Root Mean Squared Error**: 25.1% of average house value
+- **R² Score**: 0.757 (75.7% variance explained)
+- **Mean Absolute Error**: 17.0% of average house value
 
 ## Impact:
 
