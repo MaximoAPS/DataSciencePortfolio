@@ -41,6 +41,14 @@ Wine classification based on physicochemical properties (alcohol, phenols, flavo
 - **Results:** 98-100% accuracy on three wine classes
 - **Dataset:** Sklearn wine dataset (178 samples, 13 chemical features)
 
+### 6. [Guitar Sound Classifier](./guitar_sound_classifier)
+Binary classifier distinguishing acoustic vs electric guitar sounds using audio spectrograms and CNNs.
+
+- **Technologies:** Python, PyTorch, torchaudio, STFT, Mel Spectrogram, MFCC, Convolutional Neural Networks
+- **Architecture:** 3-channel image (spectrogram + mel + MFCC) fed to 2-layer CNN
+- **Dataset:** 12,600 guitar audio clips (~0.29s each, not included due to size)
+- **Note:** First deep learning project, built in 24 hours with ChatGPT assistance
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
