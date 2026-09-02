@@ -1,29 +1,29 @@
-# Segmentación de Clientes con K-Means
+# Customer Segmentation
 
-**Problema:** Identificar segmentos de clientes con comportamientos de compra similares para estrategias de marketing personalizadas.
+**Problem:** Identify customer segments with similar purchasing behaviors for personalized marketing strategies.
 
-## Datos
-- **Fuente:** Dataset Mall Customers (incluido: `mall_customers.csv`)
-- **Tamaño:** 200 clientes, 5 variables
-- **Características:** Edad, género, ingresos anuales, puntuación de gasto
+## Data
+- **Source:** Mall Customers dataset (included: `mall_customers.csv`)
+- **Size:** 200 customers, 5 variables
+- **Features:** Age, gender, annual income, spending score
 
-## Enfoque
-- Análisis exploratorio de patrones de gasto e ingresos
-- Método del codo para determinar número óptimo de clusters
-- Baseline: K-means con k=3
-- Mejorado: K-means con k=5 (óptimo según silhouette score)
+## Approach
+- Exploratory analysis of spending and income patterns
+- Elbow method to determine optimal number of clusters
+- Baseline: K-means with k=3
+- Improved: K-means with k=5 (optimal based on silhouette score)
 
-## Resultados
-- **Clusters identificados:** 5 segmentos distintos
+## Results
+- **Clusters identified:** 5 distinct segments
 - **Silhouette Score:** ~0.50
-- **Segmentos típicos:** Clientes de alto/bajo ingreso con alto/bajo gasto, permitiendo estrategias diferenciadas
+- **Typical segments:** High/low income customers with high/low spending, enabling differentiated strategies
 
-## Cómo ejecutar
+## How to Run
 
 ```bash
-# Dataset incluido en el repositorio
+# Dataset included in repository
 pip install pandas numpy matplotlib seaborn scikit-learn
 jupyter notebook segmentacion_kmeans.ipynb
 ```
 
-Ver: [`segmentacion_kmeans.ipynb`](./segmentacion_kmeans.ipynb)
+See: [`segmentacion_kmeans.ipynb`](./segmentacion_kmeans.ipynb)

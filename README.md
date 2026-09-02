@@ -1,158 +1,156 @@
-# Portfolio de Ciencia de Datos
+# Data Science Portfolio
 
-> **English:** Data Science & Machine Learning portfolio by Maximo Pere. Python-focused projects spanning regression, clustering, classification, and deep learning with audio. Buenos Aires, Argentina.
+**Máximo Pere** • Data Analyst & Machine Learning • Buenos Aires, Argentina
 
-**Máximo Pere** • Analista de Datos & Machine Learning • Buenos Aires, Argentina
+Applied data science projects spanning traditional machine learning (regression, clustering, classification) to deep learning with audio processing. Python, scikit-learn, PyTorch.
 
-Proyectos de ciencia de datos aplicada: desde machine learning clásico (regresión, clustering, clasificación) hasta deep learning con audio. Python, scikit-learn, PyTorch.
-
-📫 **Contacto:** [LinkedIn](https://linkedin.com/in/maximopere) • [GitHub](https://github.com/MaximoAPS)
+📫 **Contact:** [LinkedIn](https://linkedin.com/in/maximopere) • [GitHub](https://github.com/MaximoAPS)
 
 ---
 
 ## 🚀 Featured Projects
 
 ### 1. [Guitar Sound Classifier](./Guitar%20Sound%20Classifier)
-Clasificador binario que distingue entre guitarras acústicas y eléctricas mediante procesamiento de audio y redes neuronales convolucionales.
+Binary classifier that distinguishes acoustic vs electric guitar sounds using audio processing and convolutional neural networks.
 
-- **Problema:** Clasificar clips de audio de guitarra por tipo de instrumento
-- **Método:** Extracción de espectrogramas (STFT, Mel, MFCC) → imagen 3 canales → CNN de 2 capas
+- **Problem:** Classify guitar audio clips by instrument type
+- **Method:** Extract spectrograms (STFT, Mel, MFCC) → stack as 3-channel image → 2-layer CNN
 - **Stack:** PyTorch, torchaudio, CNN
-- **Dataset:** 12,600 clips de audio (~0.29s cada uno, **no incluido**: varios GB)
-- **Nota:** Primer proyecto de deep learning con PyTorch
+- **Dataset:** 12,600 audio clips (~0.29s each, **not included**: several GB)
+- **Note:** First deep learning project with PyTorch
 
-[Ver código →](./Guitar%20Sound%20Classifier)
+[View code →](./Guitar%20Sound%20Classifier)
 
 ---
 
 ### 2. [Wine Quality](./Wine%20Quality)
-Clasificación de vinos italianos basándose en análisis fisicoquímico.
+Classification of Italian wines based on physicochemical analysis.
 
-- **Problema:** Clasificar 3 tipos de vino según características químicas
-- **Método:** Análisis de 13 propiedades (alcohol, fenoles, flavonoides, acidez) → Random Forest
-- **Resultado:** 98-100% accuracy
-- **Dataset:** 178 muestras (sklearn integrado)
-- **Relevancia:** Ideal para docencia en química — propiedades organolépticas y analíticas
+- **Problem:** Classify 3 wine types using chemical properties
+- **Method:** Analysis of 13 properties (alcohol, phenols, flavonoids, acidity) → Random Forest
+- **Result:** 98-100% accuracy
+- **Dataset:** 178 samples (sklearn built-in)
+- **Relevance:** Ideal for chemistry teaching — organoleptic and analytical properties
 
-[Ver notebook →](./Wine%20Quality)
+[View notebook →](./Wine%20Quality)
 
 ---
 
 ### 3. [Customer Segmentation](./Customer%20Segmentation)
-Identificación de segmentos de clientes para estrategias de marketing personalizadas.
+Customer segment identification for personalized marketing strategies.
 
-- **Problema:** Agrupar clientes según patrones de ingreso y gasto
-- **Método:** K-means con método del codo y análisis silhouette
-- **Resultado:** 5 segmentos identificados (Silhouette Score ~0.50)
-- **Dataset:** 200 clientes (CSV incluido)
+- **Problem:** Group customers by income and spending patterns
+- **Method:** K-means with elbow method and silhouette analysis
+- **Result:** 5 distinct segments identified (Silhouette Score ~0.50)
+- **Dataset:** 200 customers (CSV included)
 
-[Ver notebook →](./Customer%20Segmentation)
+[View notebook →](./Customer%20Segmentation)
 
 ---
 
 ### 4. [California House Price Predictions](./California%20House%20Price%20Predictions)
-Predicción de precios inmobiliarios en California mediante feature engineering y Random Forest.
+Real estate price prediction in California using feature engineering and Random Forest.
 
-- **Problema:** Predecir precio de viviendas según ubicación y características del vecindario
-- **Método:** Feature engineering (normalización por hogar) → Random Forest con GridSearchCV
-- **Resultado:** R² = 75.7%, MAE = 16.9%
-- **Dataset:** Censo California 1990 (56K observaciones, CSV incluido ~1.4 MB)
+- **Problem:** Predict house prices based on location and neighborhood characteristics
+- **Method:** Feature engineering (per-household normalization) → Random Forest with GridSearchCV
+- **Result:** R² = 75.7%, MAE = 16.9%
+- **Dataset:** California Census 1990 (56K observations, CSV included ~1.4 MB)
 
-[Ver notebook →](./California%20House%20Price%20Predictions)
+[View notebook →](./California%20House%20Price%20Predictions)
 
 ---
 
 ### 5. [NFL Player Trajectory](./NFL%20Player%20Trajectory)
-Predicción de movimiento de jugadores en fútbol americano mediante pipeline de dos etapas.
+Player movement prediction in American football using a two-stage machine learning pipeline.
 
-- **Problema:** Predecir posiciones futuras de jugadores durante jugadas
-- **Método:** Pipeline de 2 etapas (CatBoost endpoint predictor + corrector de trayectoria) con 123 características
-- **Resultado:** RMSE = 0.98 yardas, 85% de predicciones dentro de 1 yarda
-- **Dataset:** NFL Big Data Bowl 2026 (**no incluido**: varios GB de tracking data)
+- **Problem:** Predict future player positions during plays
+- **Method:** 2-stage pipeline (CatBoost endpoint predictor + trajectory corrector) with 123 engineered features
+- **Result:** RMSE = 0.98 yards, 85% of predictions within 1 yard
+- **Dataset:** NFL Big Data Bowl 2026 (**not included**: several GB of tracking data)
 
-[Ver notebook →](./NFL%20Player%20Trajectory)
+[View notebook →](./NFL%20Player%20Trajectory)
 
 ---
 
 ### 6. [Penguin Classification](./Penguin%20Classification)
-Clasificación de especies de pingüinos — proyecto educativo con dataset pequeño.
+Penguin species classification — educational project with small dataset.
 
-- **Método:** Regresión Logística + Random Forest
-- **Resultado:** ~98% accuracy
-- **Dataset:** Palmer Penguins (344 obs, seaborn integrado)
+- **Method:** Logistic Regression + Random Forest
+- **Result:** ~98% accuracy
+- **Dataset:** Palmer Penguins (344 obs, seaborn built-in)
 
-[Ver notebook →](./Penguin%20Classification)
+[View notebook →](./Penguin%20Classification)
 
 ---
 
-## 🛠️ Tecnologías
+## 🛠️ Technologies
 
-**Lenguajes:** Python
+**Languages:** Python
 
 **Machine Learning:** scikit-learn, CatBoost, PyTorch
 
-**Procesamiento de datos:** Pandas, NumPy
+**Data Processing:** Pandas, NumPy
 
-**Visualización:** Matplotlib, Seaborn, Plotly
+**Visualization:** Matplotlib, Seaborn, Plotly
 
 **Audio:** torchaudio, STFT, Mel Spectrograms, MFCC
 
-**Técnicas:** Regresión, Clustering (K-Means), Clasificación (Random Forest, Logistic Regression), CNN, Feature Engineering, Cross-Validation
+**Techniques:** Regression, Clustering (K-Means), Classification (Random Forest, Logistic Regression), CNN, Feature Engineering, Cross-Validation
 
 ---
 
-## 📦 Instalación y Uso
+## 📦 Installation and Usage
 
-### Opción 1: Instalar todas las dependencias
+### Option 1: Install all dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Opción 2: Por proyecto individual
-Cada carpeta de proyecto tiene su propio README con instrucciones específicas.
+### Option 2: By individual project
+Each project folder has its own README with specific instructions.
 
-### Notebooks ejecutables
-La mayoría de notebooks se pueden ejecutar sin descarga adicional (usan datasets integrados o incluidos). Excepciones:
-- **NFL Player Trajectory:** Requiere descargar dataset multi-GB de Kaggle NFL Big Data Bowl 2026
-- **Guitar Sound Classifier:** Requiere proporcionar archivos .wav propios
-
----
-
-## ⚠️ Datasets NO Incluidos
-
-Por tamaño, los siguientes datasets **no están en este repositorio**:
-
-- **NFL Player Trajectory:** Tracking data de NFL (~varios GB) — disponible en Kaggle NFL Big Data Bowl 2026
-- **Guitar Sound Classifier:** 12,600 clips de audio .wav (~varios GB)
-- **CAFA (Protein Function Prediction):** Proyecto separado en Google Colab, no migrado aquí por tamaño de datasets (UniProt, GO ontology)
+### Runnable notebooks
+Most notebooks can be executed without additional downloads (use built-in or included datasets). Exceptions:
+- **NFL Player Trajectory:** Requires downloading multi-GB dataset from Kaggle NFL Big Data Bowl 2026
+- **Guitar Sound Classifier:** Requires providing your own .wav files
 
 ---
 
-## 📝 Estado del Portfolio
+## ⚠️ Datasets NOT Included
 
-> **Trabajo en progreso** — colección de proyectos seleccionados, no un producto terminado.
+Due to size, the following datasets are **not in this repository**:
 
-Este portfolio muestra proyectos de complejidad incremental:
-- Proyectos educativos pequeños (Penguin Classification, Wine Quality, Customer Segmentation)
-- Proyectos de análisis sustancial (California House Price Predictions, NFL Player Trajectory)
-- Incursión en deep learning (Guitar Sound Classifier con PyTorch)
-
-**Limitaciones conocidas:**
-- Algunos proyectos usan datasets históricos (ej: censo 1990)
-- Modelos enfocados en demostración de técnicas, no optimización exhaustiva
-- Guitar Sound Classifier: primer proyecto de DL, tiene espacio para mejoras arquitecturales
+- **NFL Player Trajectory:** NFL tracking data (~several GB) — available on Kaggle NFL Big Data Bowl 2026
+- **Guitar Sound Classifier:** 12,600 audio clips .wav (~several GB)
+- **CAFA (Protein Function Prediction):** Separate project in Google Colab, not migrated here due to dataset size (UniProt, GO ontology)
 
 ---
 
-## 📬 Contacto
+## 📝 Portfolio Status
+
+> **Work in progress** — curated collection of selected projects, not a finished product.
+
+This portfolio demonstrates projects of increasing complexity:
+- Small educational projects (Penguin Classification, Wine Quality, Customer Segmentation)
+- Substantial analysis projects (California House Price Predictions, NFL Player Trajectory)
+- Deep learning exploration (Guitar Sound Classifier with PyTorch)
+
+**Known limitations:**
+- Some projects use historical datasets (e.g., 1990 census)
+- Models focus on demonstrating techniques, not exhaustive optimization
+- Guitar Sound Classifier: first DL project, room for architectural improvements
+
+---
+
+## 📬 Contact
 
 **Máximo Pere**
 - LinkedIn: [linkedin.com/in/maximopere](https://linkedin.com/in/maximopere)
 - GitHub: [github.com/MaximoAPS](https://github.com/MaximoAPS)
-- Ubicación: Buenos Aires, Argentina
+- Location: Buenos Aires, Argentina
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está licenciado bajo [MIT License](LICENSE).
+This project is licensed under [MIT License](LICENSE).

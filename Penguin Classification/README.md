@@ -1,27 +1,27 @@
-# Clasificación de Especies de Pingüinos
+# Penguin Classification
 
-**Problema:** Clasificar tres especies de pingüinos (Adelie, Chinstrap, Gentoo) basándose en medidas físicas.
+**Problem:** Classify three penguin species (Adelie, Chinstrap, Gentoo) based on physical measurements.
 
-## Datos
-- **Fuente:** Palmer Penguins dataset (integrado en seaborn)
-- **Tamaño:** 344 observaciones, 4 características físicas
-- **Características:** Largo y profundidad del pico, largo de aleta, masa corporal
+## Data
+- **Source:** Palmer Penguins dataset (seaborn built-in)
+- **Size:** 344 observations, 4 physical features
+- **Features:** Bill length and depth, flipper length, body mass
 
-## Enfoque
-- EDA con visualizaciones por especie
-- Modelo baseline: Regresión Logística
-- Modelo mejorado: Random Forest
+## Approach
+- EDA with visualizations by species
+- Baseline model: Logistic Regression
+- Improved model: Random Forest
 
-## Resultados
-- **Accuracy:** ~98% en conjunto de prueba
-- **Características clave:** Largo de aleta y largo de pico son los predictores más importantes
+## Results
+- **Accuracy:** ~98% on test set
+- **Key features:** Flipper length and bill length are the most important predictors
 
-## Cómo ejecutar
+## How to Run
 
 ```bash
-# El notebook usa datasets integrados, no requiere descarga de datos
+# Notebook uses built-in datasets, no data download required
 pip install pandas numpy seaborn matplotlib scikit-learn
 jupyter notebook clasificacion_penguins.ipynb
 ```
 
-Ver: [`clasificacion_penguins.ipynb`](./clasificacion_penguins.ipynb)
+See: [`clasificacion_penguins.ipynb`](./clasificacion_penguins.ipynb)

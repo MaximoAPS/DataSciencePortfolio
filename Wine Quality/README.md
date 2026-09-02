@@ -1,32 +1,32 @@
-# Clasificación de Vinos
+# Wine Quality
 
-**Problema:** Clasificar vinos italianos en tres categorías basándose en sus propiedades fisicoquímicas.
+**Problem:** Classify Italian wines into three categories based on their physicochemical properties.
 
-## Datos
-- **Fuente:** Sklearn wine dataset (integrado)
-- **Tamaño:** 178 muestras, 13 características químicas
-- **Características:** Alcohol, acidez málica, cenizas, fenoles totales, flavonoides, proantocianinas, intensidad de color, tono, OD280/OD315, prolina
+## Data
+- **Source:** Sklearn wine dataset (built-in)
+- **Size:** 178 samples, 13 chemical features
+- **Features:** Alcohol, malic acid, ash, total phenols, flavonoids, proanthocyanins, color intensity, hue, OD280/OD315, proline
 
-## Enfoque
-- Análisis de correlación entre propiedades químicas
-- Visualización de características por clase de vino
-- Baseline: Regresión Logística con estandarización
-- Mejorado: Random Forest
+## Approach
+- Correlation analysis between chemical properties
+- Visualization of features by wine class
+- Baseline: Logistic Regression with standardization
+- Improved: Random Forest
 
-## Resultados
-- **Accuracy:** 98-100% en conjunto de prueba
-- **Características clave:** Flavonoides, prolina, y alcohol son los predictores más importantes
-- **Interpretación química:** Las propiedades organolépticas (fenoles, flavonoides) están fuertemente relacionadas con la clasificación del vino
+## Results
+- **Accuracy:** 98-100% on test set
+- **Key features:** Flavonoids, proline, and alcohol are the most important predictors
+- **Chemical interpretation:** Organoleptic properties (phenols, flavonoids) are strongly related to wine classification
 
-## Cómo ejecutar
+## How to Run
 
 ```bash
-# El notebook usa datasets integrados de sklearn
+# Notebook uses sklearn built-in datasets
 pip install pandas numpy matplotlib seaborn scikit-learn
 jupyter notebook clasificacion_vino.ipynb
 ```
 
-Ver: [`clasificacion_vino.ipynb`](./clasificacion_vino.ipynb)
+See: [`clasificacion_vino.ipynb`](./clasificacion_vino.ipynb)
 
-## Relevancia
-Ideal para docentes de química: las características fisicoquímicas (alcohol, acidez, compuestos fenólicos) son conceptos que se enseñan en química orgánica y analítica.
+## Relevance
+Ideal for chemistry teachers: physicochemical features (alcohol, acidity, phenolic compounds) are concepts taught in organic and analytical chemistry.
