@@ -1,36 +1,52 @@
 # Chemical Mechanism Classification
 
-**Problem:** Classify chemical reaction mechanisms based on experimental data and molecular features.
+**Problem:** Classify chemical reactions into one of four mechanism types based on reaction strings.
 
 ## Data
-- **Source:** *To be documented when data is integrated*
-- **Size:** *TBD*
-- **Features:** *Chemical reaction parameters, molecular descriptors*
+- **Source:** Synthetic chemical challenge dataset
+- **Size:** 3,000+ reactions (train), 1,500+ reactions (test)
+- **Features:** Chemical reaction strings (SMILES-like notation)
+- **Classes:** 4 mechanism types
+  - Alpha transformation
+  - Beta displacement
+  - Gamma rearrangement
+  - Delta elimination
 
 ## Approach
 
-*This section will be updated once the notebook is integrated with:*
-- Feature engineering methodology
-- Model selection and rationale
-- Training approach
+**Hybrid architecture combining rule-based and machine learning:**
+
+1. **Deterministic parser** (~89% of cases, 94.3% accuracy)
+   - Semantic inline parsing with two-pass fallback
+   - Rule-based chemical logic
+
+2. **ML ensemble** (LightGBM + CatBoost)
+   - Tiebreaker for ambiguous cases
+   - 75.7% out-of-fold accuracy
+
+3. **API fallback** (optional, auto-detected)
+
+**Feature engineering:**
+- Text pattern extraction from reaction strings
+- Chemical structure indicators
+- Mechanism-specific rule features
 
 ## Results
 
-*Results will be documented after notebook execution*
+- **Out-of-Fold Accuracy:** 92.2%
+- **Baseline (AI):** 77.4%
+- **Approach:** Deterministic rules handle majority with high accuracy, ML resolves edge cases
 
 ## Technologies
 
 - Python, Pandas, NumPy
-- Scikit-learn / Machine Learning framework *TBD*
-- Matplotlib, Seaborn (visualization)
+- LightGBM, CatBoost
+- Pattern matching and chemical parsing
 
 ## How to Run
 
 ```bash
-# Instructions will be added when notebook is integrated
 jupyter notebook "Chemical Mechanism Classification.ipynb"
 ```
 
-## Status
-
-⚠️ **Integration in progress** — Notebook and data to be added from source materials.
+Dataset included in repository.

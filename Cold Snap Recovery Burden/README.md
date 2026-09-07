@@ -1,36 +1,44 @@
 # Cold Snap Recovery Burden
 
-**Problem:** Model and predict the recovery burden on infrastructure and resources following extreme cold weather events.
+**Problem:** Predict infrastructure recovery burden following extreme cold weather events, measured as recovery resource requirements by location and timeframe.
 
 ## Data
-- **Source:** *To be documented when data is integrated*
-- **Size:** *TBD*
-- **Features:** *Weather data, infrastructure metrics, temporal patterns*
+- **Source:** Weather and infrastructure challenge dataset
+- **Size:** 538 samples (train), 538 samples (test)
+- **Features:** Weather variables (temperature, humidity, dewpoint, solar radiation), temporal indicators
+- **Note:** Test cities have zero location overlap with training (fully out-of-distribution)
 
 ## Approach
 
-*This section will be updated once the notebook is integrated with:*
-- Time series analysis or regression methodology
-- Feature engineering for weather patterns
-- Model selection
+**LightGBM regression** with careful feature engineering for out-of-distribution generalization.
+
+**Key insights:**
+- Target spans 170-11,866 with moderate skew (1.56)
+- Raw MAE loss outperforms log-transformed target
+- `prefix_hours` is critical conditioning feature (median: 12h=1442, 24h=1048, 36h=501)
+- Most predictive features: `relhum_min` (r=0.25), `dew_dry_spread` (r=-0.21), `ghi_deficit`
+
+**Validation strategy:**
+- Cross-validation accounting for OOD test distribution
+- Focus on robust features that generalize across locations
 
 ## Results
 
-*Results will be documented after notebook execution*
+- **Metric:** Mean Absolute Error (MAE)
+- **Challenge:** Fully OOD test set (no location overlap with train)
+- **Approach:** LightGBM with weather-based features robust to location shift
 
 ## Technologies
 
 - Python, Pandas, NumPy
-- Scikit-learn / ML framework *TBD*
-- Matplotlib, Seaborn (visualization)
+- LightGBM
+- Scikit-learn (preprocessing)
+- Matplotlib (visualization)
 
 ## How to Run
 
 ```bash
-# Instructions will be added when notebook is integrated
 jupyter notebook "Cold Snap Recovery Burden.ipynb"
 ```
 
-## Status
-
-⚠️ **Integration in progress** — Notebook and data to be added from source materials.
+Dataset included in repository.

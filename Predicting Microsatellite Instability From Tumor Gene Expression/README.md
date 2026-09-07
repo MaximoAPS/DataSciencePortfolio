@@ -3,38 +3,55 @@
 **Problem:** Predict microsatellite instability (MSI) status in tumors from gene expression profiles for cancer diagnosis and treatment planning.
 
 ## Data
-- **Source:** *To be documented when data is integrated*
-- **Size:** *TBD (large CSVs expected)*
-- **Features:** *Gene expression values, tumor characteristics*
-- **Note:** Due to potentially large data files (>90MB), training data may not be included in repository
+- **Source:** Cancer genomics challenge dataset
+- **Size:** Limited samples with ~33,379 gene expression features
+- **Features:** Gene expression values across genome
+- **Classes:** 3 MSI status categories
+  - **MSI-H:** High microsatellite instability (DNA repair defect, responds to immunotherapy)
+  - **MSI-L:** Low instability  
+  - **MSS:** Microsatellite stable (majority class)
+- **Dataset:** `train_short.csv` (sample), `test.csv` included
+  - **Note:** Full `train.csv` (~153MB) excluded from repository due to size
 
 ## Approach
 
-*This section will be updated once the notebook is integrated with:*
-- Gene expression feature selection
-- Classification methodology
-- Model evaluation on medical data
+**High-dimensional classification** with extreme feature-to-sample ratio challenge (p >> n).
+
+**Technical challenge:**
+- ~33,379 gene features with only hundreds of samples
+- Requires aggressive dimensionality reduction or feature selection
+- Class imbalance (MSS majority class)
+
+**Strategy:**
+- Feature selection targeting MSI-relevant genes
+- Regularized classification to prevent overfitting
+- Careful cross-validation given limited samples
 
 ## Results
 
-*Results will be documented after notebook execution*
+- **Metric:** Macro F1-score
+- **Challenge:** High-dimensional genomic data (33K+ features, few samples)
+- **Clinical relevance:** MSI-H detection guides immunotherapy treatment decisions
 
 ## Technologies
 
 - Python, Pandas, NumPy
-- Scikit-learn / ML framework *TBD*
-- Matplotlib, Seaborn (visualization)
+- Scikit-learn (feature selection, classification)
+- Dimensionality reduction techniques
 
 ## How to Run
 
 ```bash
-# Instructions will be added when notebook is integrated
-# Large dataset may need to be downloaded separately
 jupyter notebook "Predicting Microsatellite Instability From Tumor Gene Expression.ipynb"
 ```
 
-## Status
+**Dataset notes:**
+- Uses `train_short.csv` sample file (full training data excluded for size)
+- Full `train.csv` is ~153MB and not included in repository
+- `test.csv` included for inference
 
-⚠️ **Integration in progress** — Notebook and data to be added from source materials.
+## Applications
 
-**Dataset note:** If training data exceeds 90MB, only sample data or documentation will be included.
+- Cancer diagnosis and classification
+- Treatment planning (immunotherapy eligibility)
+- Genomic biomarker discovery
