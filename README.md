@@ -83,6 +83,92 @@ Penguin species classification — educational project with small dataset.
 
 ---
 
+### 7. [Chemical Mechanism Classification](./Chemical%20Mechanism%20Classification)
+Classification of chemical reaction mechanisms based on experimental data and molecular features.
+
+- **Problem:** Classify chemical reaction mechanisms from molecular descriptors
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Chemical%20Mechanism%20Classification)
+
+---
+
+### 8. [Cold Snap Recovery Burden](./Cold%20Snap%20Recovery%20Burden)
+Modeling recovery burden on infrastructure following extreme cold weather events.
+
+- **Problem:** Predict recovery resource requirements after cold snaps
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Cold%20Snap%20Recovery%20Burden)
+
+---
+
+### 9. [Diabetic Patient Hospital Length-of-Stay Prediction](./Diabetic%20Patient%20Hospital%20Length-of-Stay%20Prediction)
+Predicting hospital length-of-stay for diabetic patients to optimize care planning.
+
+- **Problem:** Predict length-of-stay from patient clinical data
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Diabetic%20Patient%20Hospital%20Length-of-Stay%20Prediction)
+
+---
+
+### 10. [Plasma Etching Spatial Uniformity Prediction](./Plasma%20Etching%20Spatial%20Uniformity%20Prediction)
+Predicting spatial uniformity in semiconductor plasma etching for manufacturing optimization.
+
+- **Problem:** Predict uniformity patterns from process parameters
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Note:** May use Python script rather than notebook
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Plasma%20Etching%20Spatial%20Uniformity%20Prediction)
+
+---
+
+### 11. [Predicting Microsatellite Instability From Tumor Gene Expression](./Predicting%20Microsatellite%20Instability%20From%20Tumor%20Gene%20Expression)
+Cancer diagnostics: predicting microsatellite instability status from gene expression profiles.
+
+- **Problem:** Classify MSI status from tumor gene expression
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Dataset:** Large gene expression data (may be excluded from repo if >90MB)
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Predicting%20Microsatellite%20Instability%20From%20Tumor%20Gene%20Expression)
+
+---
+
+### 12. [Smart Grid Oscillation Risk Challenge](./Smart%20Grid%20Oscillation%20Risk%20Challenge)
+Predicting oscillation risk in smart grid power systems for improved reliability.
+
+- **Problem:** Predict grid oscillation risk from operational data
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Smart%20Grid%20Oscillation%20Risk%20Challenge)
+
+---
+
+### 13. [Spatiotemporal Mobility Energy Load Modeling](./Spatiotemporal%20Mobility%20Energy%20Load%20Modeling)
+Energy load forecasting from mobility patterns across space and time.
+
+- **Problem:** Model energy consumption from spatiotemporal mobility data
+- **Method:** *To be documented after integration*
+- **Stack:** Python, scikit-learn
+- **Status:** ⚠️ Integration in progress
+
+[View project →](./Spatiotemporal%20Mobility%20Energy%20Load%20Modeling)
+
+---
+
 ## 🛠️ Technologies
 
 **Languages:** Python
