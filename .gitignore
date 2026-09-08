@@ -205,3 +205,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Large datasets for ML case studies
+# Exclude large CSV/data files (>10MB) from specific projects
+**/train.csv
+**/train_large.csv
+**/test_large.csv
+# Keep smaller sample files
+!**/train_short.csv
+!**/test_short.csv
+!**/sample_*.csv
+
+# Project-specific large data exclusions
+Predicting Microsatellite Instability From Tumor Gene Expression/train.csv
+Predicting Microsatellite Instability From Tumor Gene Expression/test.csv

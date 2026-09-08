@@ -83,6 +83,96 @@ Penguin species classification — educational project with small dataset.
 
 ---
 
+### 7. [Chemical Mechanism Classification](./Chemical%20Mechanism%20Classification)
+Classification of chemical reactions into mechanism types using hybrid rule-based and machine learning approach.
+
+- **Problem:** Classify chemical reactions into 4 mechanism categories from reaction strings
+- **Method:** Hybrid architecture combining deterministic parser (89% coverage, 94.3% accuracy) with ML ensemble (LightGBM + CatBoost tiebreaker)
+- **Result:** 92.2% out-of-fold accuracy
+- **Stack:** Python, LightGBM, CatBoost, pattern matching
+- **Dataset:** 3,000+ reactions (CSV included ~7 MB)
+
+[View notebook →](./Chemical%20Mechanism%20Classification)
+
+---
+
+### 8. [Cold Snap Recovery Burden](./Cold%20Snap%20Recovery%20Burden)
+Predicting infrastructure recovery burden after extreme cold weather events.
+
+- **Problem:** Predict recovery resource requirements from weather data (fully OOD test cities)
+- **Method:** LightGBM with weather-based features (relhum_min, dew_dry_spread, prefix_hours)
+- **Stack:** Python, LightGBM, scikit-learn
+- **Dataset:** 538 samples (CSV included ~1 MB)
+- **Challenge:** Test locations have zero overlap with training data
+
+[View notebook →](./Cold%20Snap%20Recovery%20Burden)
+
+---
+
+### 9. [Diabetic Patient Hospital Length-of-Stay Prediction](./Diabetic%20Patient%20Hospital%20Length-of-Stay%20Prediction)
+Clinical resource optimization through length-of-stay prediction for diabetic patients.
+
+- **Problem:** Predict hospital stay duration from clinical data
+- **Method:** XGBoost with clinical feature engineering (num_medications × lab_procedures interaction)
+- **Stack:** Python, XGBoost, scikit-learn
+- **Dataset:** 14,304 patient records (CSV included ~10 MB)
+- **Note:** Notebook outputs require refresh due to XGBoost API change
+
+[View notebook →](./Diabetic%20Patient%20Hospital%20Length-of-Stay%20Prediction)
+
+---
+
+### 10. [Plasma Etching Spatial Uniformity Prediction](./Plasma%20Etching%20Spatial%20Uniformity%20Prediction)
+Semiconductor manufacturing quality control through spatial uniformity prediction.
+
+- **Problem:** Predict etching uniformity across 49 wafer zones from 8 process parameters
+- **Method:** PyTorch neural network with custom ZWUE loss (zone-weighted, asymmetric penalty)
+- **Stack:** Python, PyTorch, physics-motivated feature engineering
+- **Dataset:** 12,000 samples (CSV included ~18 MB)
+- **Note:** Python script (solution.py) rather than notebook
+
+[View project →](./Plasma%20Etching%20Spatial%20Uniformity%20Prediction)
+
+---
+
+### 11. [Predicting Microsatellite Instability From Tumor Gene Expression](./Predicting%20Microsatellite%20Instability%20From%20Tumor%20Gene%20Expression)
+Cancer diagnostics: MSI status prediction from high-dimensional gene expression for treatment planning.
+
+- **Problem:** Classify MSI status (MSI-H / MSI-L / MSS) from ~33,379 gene expression features
+- **Method:** High-dimensional classification with feature selection (extreme p >> n challenge)
+- **Stack:** Python, scikit-learn, dimensionality reduction
+- **Dataset:** Gene expression profiles (**full train excluded**: ~153MB; train_short.csv sample included)
+- **Clinical relevance:** MSI-H detection guides immunotherapy eligibility
+
+[View notebook →](./Predicting%20Microsatellite%20Instability%20From%20Tumor%20Gene%20Expression)
+
+---
+
+### 12. [Smart Grid Oscillation Risk Challenge](./Smart%20Grid%20Oscillation%20Risk%20Challenge)
+Power grid stability prediction with asymmetric risk-weighted loss for critical infrastructure.
+
+- **Problem:** Predict oscillation risk across 6 grid buses with custom GRWE metric
+- **Method:** CatBoost per bus with asymmetric bias correction + multi-output neural network
+- **Stack:** Python, CatBoost, custom loss (6.25× penalty for under-predicting high-risk events)
+- **Dataset:** 30,000 samples (CSV included ~30 MB)
+
+[View notebook →](./Smart%20Grid%20Oscillation%20Risk%20Challenge)
+
+---
+
+### 13. [Spatiotemporal Mobility Energy Load Modeling](./Spatiotemporal%20Mobility%20Energy%20Load%20Modeling)
+Urban energy demand forecasting from mobility patterns with out-of-distribution regime handling.
+
+- **Problem:** Model energy load from spatiotemporal mobility data (OOD seasonal regime in test)
+- **Method:** Regression with PCA (PC1 explains 98.8% continuous variance) and robust OOD handling
+- **Stack:** Python, scikit-learn, PCA
+- **Dataset:** 2,184 samples (CSV included ~6 MB)
+- **Challenge:** Test contains unseen seasonal_regime_code=3
+
+[View notebook →](./Spatiotemporal%20Mobility%20Energy%20Load%20Modeling)
+
+---
+
 ## 🛠️ Technologies
 
 **Languages:** Python
